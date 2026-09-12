@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "outputDirectory": "client/dist",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install && npm --prefix client install",
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "/api/index.js"
+    }
+  ]
+}

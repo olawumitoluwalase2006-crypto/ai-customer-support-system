@@ -1,0 +1,36 @@
+{
+  "name": "ai-customer-support-system",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-Powered Customer Support System with React, Express, Supabase, and Google Gemini API",
+  "main": "api/index.js",
+  "scripts": {
+    "dev:server": "node server.js",
+    "dev:client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:client",
+    "start": "node server.js",
+    "postinstall": "npm --prefix client install"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "customer-support",
+    "gemini-ai",
+    "supabase",
+    "react",
+    "vite",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT"
+}
